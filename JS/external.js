@@ -21,6 +21,13 @@ var facebookHours = Number(prompt("Please type your contracted hours here for Fa
 var totalHoursWorked = parseInt((googleHours * 400) + (amazonHours * 380) + (facebookHours * 350));
 alert("Your total hours for all contracts is $" + totalHoursWorked)
 
+var classFull = confirm("Is this class displayed as full?");
+var scheduleConflicts = confirm("Do you have a class at this time?");
+alert("You have been enrolled in this course " + (!classFull && !scheduleConflicts));
+
+
+
+
 
 
 
