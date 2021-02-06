@@ -23,12 +23,17 @@ alert("Your total hours for all contracts is $" + totalHoursWorked)
 
 var classFull = confirm("Is this class displayed as full?");
 var scheduleConflicts = confirm("Do you have a class at this time?");
-alert("You have been enrolled in this course " + (!classFull && !scheduleConflicts));
+alert("You have been enrolled in this course. " + (!classFull && !scheduleConflicts));
 
+var offerNotExpired = confirm('Is the offer still valid?');
+var twoOrMoreItems = parseInt(prompt('Is there 2 or more items in your basket?')) >= 2;
+var premiumMember = confirm('Are you a Premium member?');
+var canApplyOffer = (twoOrMoreItems || premiumMember) && offerNotExpired;
+alert("Offer is applied, thank you for shopping with us!")
 
-
-
-
-
+//other options:
+// var hasEnoughItems = twoOrMoreItems || premiumMember;
+//or
+//var canApplyOffer = hasEnoughItems && offerNotExpired;
 
 
