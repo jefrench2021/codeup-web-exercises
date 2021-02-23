@@ -31,9 +31,11 @@
 //     }else if(color === )
 // }
 //
-var currentColor = analyzeColor("black")
+// var currentColor = analyzeColor("black")
 
-console.log(currentColor);
+// console.log(currentColor);
+
+var message = console.log(currentColor(randomColor));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -49,7 +51,7 @@ console.log(currentColor);
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-function analyzeColor(color){
+function currentColor(color){
 
     switch (color){
         case "blue":
@@ -69,7 +71,8 @@ function analyzeColor(color){
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var useColor = prompt("Choose a color.");
+alert()
 /* ########################################################################## */
 
 /**
