@@ -11,7 +11,22 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+var person = new Object();
+person.firstName = "Jake"
+person.lastName = "French"
 
+// MOST COMMON
+// var person = {
+//     firstName: "Jake",
+//     lastName: "French"
+// }
+// var person = {};
+//
+// person.firstName = "Jake"
+// person.lastName = "French"
+
+console.log(person.firstName)
+console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -22,6 +37,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+
+    person.sayHello = function (){
+        return "Hello from "+ this.firstName + this.lastName "!";
+    }
+consol.log(person.sayHello)
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
