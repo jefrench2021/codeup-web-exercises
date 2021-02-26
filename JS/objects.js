@@ -12,8 +12,14 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 var person = new Object();
-person.firstName = "Jake"
+person.firstName = "Jake",
 person.lastName = "French"
+
+
+// UNCOMMENT EXAMPLE AND THIS BELOW TO SEE EX. watch video at around 27 mins
+// var personTwo = new Object();
+// person.firstName = "Jah";
+// person.lastName = "Ortiz"
 
 // MOST COMMON
 // var person = {
@@ -40,8 +46,17 @@ console.log(person.lastName);
 
     person.sayHello = function (){
         return "Hello from "+ this.firstName + this.lastName "!";
-    }
+    };
 consol.log(person.sayHello)
+
+// Ex.
+// var sayGretting = function (){
+//         return "Hello from "+ this.firstName + this.lastName "!";
+//     };
+//
+// person.sayHello = sayGretting;
+// personTwo.sayHello =sayGretting;
+
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -56,11 +71,19 @@ consol.log(person.sayHello)
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+shoppers.forEach(function (shoppers)){
+    if (shopper.amount >200){
+        var discount = shopper.amount * .12;
+        var newAmount = shopper.amount - discount;
+        consol.log(shopper.name +"your original amount was " + .shopper.amount + "you're discounted amount is " )
+    }
+    }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
