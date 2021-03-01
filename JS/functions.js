@@ -48,17 +48,17 @@ function isTwo(num) {
 console.log(isTwo(2));
 
 //calculate Tip
-function calcuateTip(tipPercent, totalBill) {
-    return tipPercentage * totalBill;
+function calculateTip(tipPercent, totalBill) {
+    return tipPercent * totalBill;
 }
 // or
-//var tip = tipPercentage * totalBill;
+//var tip = tipPercent * totalBill;
 //return tip;
 // }
 // console.log(calcuTip(.20, 28.60).toFixed(2));
 
-var totalBill =Number(prompt("Hello, what's your bill total?"));
-var tipPercent =Number(prompt("How much would you like to tip"));
+var totalBill = Number(prompt("Hello, what's your bill total?"));
+var tipPercent = Number(prompt("How much would you like to tip"));
 
 console.log(Number("3.25234").toFixed(2));
 
@@ -68,8 +68,8 @@ var tipMessage = "You would tip $" + calculatedTip;
 alert(tipMessage);
 //applyDiscount function
 
-function applyDiscount(price, discountPercent){
-    var discountedPrice = price - (price * discountPercent);
-    return discountedPrice.toFixed(2);
-}
-console.log(applyDiscount(20, 20));
+// function applyDiscount(price, discountPercent){
+//     var discountedPrice = price - (price * discountPercent);
+//     return discountedPrice.toFixed(2);
+// }
+// console.log(applyDiscount(20, 20));
