@@ -69,6 +69,7 @@ alert(tipMessage);
 //applyDiscount function
 
 function applyDiscount(price, discountPercent){
-    return price - (price * discountPercent);
+    var discountedPrice = price - (price * discountPercent);
+    return discountedPrice.toFixed(2);
 }
 console.log(applyDiscount(20, 20));
