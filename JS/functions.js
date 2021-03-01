@@ -55,11 +55,20 @@ function calcuateTip(tipPercent, totalBill) {
 //var tip = tipPercentage * totalBill;
 //return tip;
 // }
-console.log(calcuTip(.20, 28.60).toFixed(2));
+// console.log(calcuTip(.20, 28.60).toFixed(2));
 
-// // var totalBill =(prompt("Hello, what's your bill total?"));
-// var tipPercent =(prompt("How much would you like to tip"));
-//
-// alert("Here's the amount you should tip based on your total bill $") + (calculateTip(bill, percent).toFixed(2));
-//
-// console.log(applyDiscount(20, 20));
+var totalBill =Number(prompt("Hello, what's your bill total?"));
+var tipPercent =Number(prompt("How much would you like to tip"));
+
+console.log(Number("3.25234").toFixed(2));
+
+var calculatedTip = calculateTip(tipPercent,totalBill)
+var tipMessage = "You would tip $" + calculatedTip;
+
+alert(tipMessage);
+//applyDiscount function
+
+function applyDiscount(price, discountPercent){
+    return price - (price * discountPercent);
+}
+console.log(applyDiscount(20, 20));
