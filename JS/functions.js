@@ -65,11 +65,5 @@ console.log(Number("3.25234").toFixed(2));
 var calculatedTip = calculateTip(tipPercent,totalBill)
 var tipMessage = "You would tip $" + calculatedTip;
 
-alert(tipMessage);
-//applyDiscount function
-
-// function applyDiscount(price, discountPercent){
-//     var discountedPrice = price - (price * discountPercent);
-//     return discountedPrice.toFixed(2);
-// }
-// console.log(applyDiscount(20, 20));
+// alert(tipMessage);
+// //applyDiscount function
