@@ -70,10 +70,10 @@
     second([1,2,3,4]);
 
 
-    function last(array) {
-        console.log(array[array.length - 1]);
-    }
-    last([1,2,3,4]);
-}
-
-();
+//     function last(array) {
+//         console.log(array[array.length - 1]);
+//     }
+//     last([1,2,3,4]);
+// }
+//
+// ();
