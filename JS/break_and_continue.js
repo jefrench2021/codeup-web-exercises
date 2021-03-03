@@ -8,7 +8,7 @@ for (var x = 0; x < 50; x++) {
 }
 for (var y = 1; y < 50; y+=2) {
     if (y === userNum) {
-        console.log("Yikes!");
+        console.log("wow!");
         continue;
     }console.log(y);
 }
