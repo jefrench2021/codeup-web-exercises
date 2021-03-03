@@ -18,7 +18,7 @@ while (x <=65536){
 // 3. check to see if have amount available
 // 4. if not sorry message
 // 5. if do happy message
-// 6. subtract the amount of cones sold from allcones
+// 6. subtract the amount of cones sold from all cones
 // 7. repeat until i dont have any cones left
 
 
