@@ -22,17 +22,17 @@ person.lastName = "French"
 // person.lastName = "Ortiz"
 
 // MOST COMMON
-// var person = {
-//     firstName: "Jake",
-//     lastName: "French"
-// }
-// var person = {};
-//
-// person.firstName = "Jake"
-// person.lastName = "French"
+var person = {
+    firstName: "Jake",
+    lastName: "French"
+}
+var person = {};
 
-console.log(person.firstName)
-console.log(person.lastName);
+person.firstName = "Jake"
+person.lastName = "French"
+
+// console.log(person.firstName)
+// console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -42,20 +42,18 @@ console.log(person.lastName);
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
-
-    person.sayHello = function (){
-        return "Hello from "+ this.firstName + this.lastName "!";
-    };
-consol.log(person.sayHello)
+// person.sayHello = function (){
+//     return ("Hello from " + this.firstName + this.lastName "!");
+//     }
+// consol.log(person.sayHello)
 
 // Ex.
-// var sayGretting = function (){
-//         return "Hello from "+ this.firstName + this.lastName "!";
-//     };
-//
-// person.sayHello = sayGretting;
-// personTwo.sayHello =sayGretting;
+var sayGretting = function (){
+        return "Hello from "+ this.firstName + this.lastName "!";
+}
+
+person.sayHello = sayGretting;
+personTwo.sayHello =sayGretting;
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -71,19 +69,20 @@ consol.log(person.sayHello)
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-
-shoppers.forEach(function (shoppers)){
-    if (shopper.amount >200){
-        var discount = shopper.amount * .12;
-        var newAmount = shopper.amount - discount;
-        consol.log(shopper.name +"your original amount was " + .shopper.amount + "you're discounted amount is " )
-    }
-    }
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//
+// shoppers.forEach(function (shoppers)) {
+//     if (shopper.amount <= 200) {
+//     } else {
+//     var discount = shopper.amount * .12;
+//     var newAmount = shopper.amount - discount;
+//     consol.log(shopper.name + "your original amount was " +.shopper.amount + "you're discounted amount is ")
+//         }
+//     }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
