@@ -6,7 +6,7 @@ while (num <= 65536) {
     num *= 2;
 
 }
-// vivians way of solving
+
 var x = 2;
 while (x <=65536){
     console.log(x);
