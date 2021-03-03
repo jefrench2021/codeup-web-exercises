@@ -8,7 +8,7 @@
 // }
 // for (var y = 1; y < 50; y+=2) {
 //     if (y === userNum) {
-//         console.log("wow!");
+//         console.log("Yikes!");
 //         continue;
 //     }console.log(y);
 // }
