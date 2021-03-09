@@ -69,20 +69,20 @@ personTwo.sayHello =sayGretting;
      * and console.log the relevant messages for each person
      */
 
-//     var shoppers = [
-//         {name: 'Cameron', amount: 180},
-//         {name: 'Ryan', amount: 250},
-//         {name: 'George', amount: 320}
-//     ];
-//
-// shoppers.forEach(function (shoppers)) {
-//     if (shopper.amount <= 200) {
-//     } else {
-//     var discount = shopper.amount * .12;
-//     var newAmount = shopper.amount - discount;
-//     consol.log(shopper.name + "your original amount was " +.shopper.amount + "you're discounted amount is ")
-//         }
-//     }
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+shoppers.forEach(function (shoppers)) {
+    if (shopper.amount <= 200) {
+    } else {
+    var discount = shopper.amount * .12;
+    var newAmount = shopper.amount - discount;
+    consol.log(shopper.name + "your original amount was " +.shopper.amount + "you're discounted amount is ")
+        }
+    }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
