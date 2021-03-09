@@ -45,15 +45,15 @@ fieldset {
 }
 
 .form-label {
-    text-decoration: bold;
+    font-weight: bold;
     /* The text of a label must be bold */
 }
 
 .form-control {
-    margin-top: .5em;
-    margin-bottom: .5em;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin-top: .5em;
+    margin-bottom: .5em;
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
 
@@ -65,13 +65,13 @@ fieldset {
 
 .btn {
     padding: 8px;
-    text-decoration: bold;
-    text-color: white;
+    font-weight: bold;
+    color: white;
     border: 1px solid lightgrey;
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
     /* The border of this element should be 1px, and its color should be light grey */
-    background-color: #0fb784;
+    background-color: mediumseagreen;
 }
 
 .btn-block {
