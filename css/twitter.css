@@ -27,9 +27,12 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-    position;fixed;
+    position: fixed;
     width: 100%;
+    z-index: 1;
 }
+
+
 .nav {
     list-style-type: none;
     padding: 0;
@@ -55,7 +58,13 @@ a {
 
 .profile-image {
     position: absolute;
+    top: 14.5em;
 
+}
+
+.profiled-form {
+    float: right;
+    line-height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
