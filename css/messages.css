@@ -6,16 +6,17 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
-.message {
+div {
     border: 1px solid lightgrey;
     margin: .5em 1.2em;
     padding: .5em;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .message-info {
-    color: mediumblue;
-    background-color: lightblue;
+    color: #c3d6f9;
+    background-color: #4b3;
+
 }
 
 .message-success {
