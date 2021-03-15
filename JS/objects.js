@@ -132,5 +132,41 @@ shoppers.forEach(function (shoppers)) {
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    function createBook() {
+        var title = prompt("What is the title of the book?");
+        var author = [];
+        author[0] = prompt("What is the authors first name?");
+        author[1] = prompt("What is the author's last name?");
+
+        do {
+            var i = books.length;
+            books[i] = {
+                title: title,
+                author:{
+                    firstName: author[0],
+                    lastName: author[1]
+                }
+
+            }
+
+        } while (i < i);
+    }
+    createBook();
+    console.log(books);
+
+
+
+    function showBookInfo() {
+        var bookName = prompt("Please enter the title of the book you're searching for");
+
+        for (var i=0; i<books.length; i++) {
+            if (bookName === books[i].title) {
+                console.log("The book you chose was book #" + (i +1) + " which is " + books[i].title + " and the author is "
+                    + books[i].author.firstName + " " + books[i].author.lastName);
+            }
+        }
+    }
+
+    showBookInfo();
 
 })();
