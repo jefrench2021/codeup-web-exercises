@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.flex-container {
+    width: 100%;
+    border: 3px solid goldenrod;
+    display: flex;
+/*    Display Flex makes all children of this parent tag "flex-container" flex items of their parent*/
+
+}
+.flex-item {
+    background: #BFD45D;
+    border: 2px solid #F9EFD6;
+    padding: 1em;
+    flex-direction: row;
+
+}
