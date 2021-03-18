@@ -8,15 +8,18 @@ body {
 }
 .flex-container {
     width: 100%;
-    border: 3px solid goldenrod;
+    border: 3px solid #daa520;
     display: flex;
-/*    Display Flex makes all children of this parent tag "flex-container" flex items of their parent*/
+/*    Display Flex makes all children of this parent tag "flex-container" flex items of their parent, creates the start/identified as a the flex container with other flex items inside of it.*/
 
 }
 .flex-item {
     background: #BFD45D;
     border: 2px solid #F9EFD6;
     padding: 1em;
-    flex-direction: row;
+    /*flex-direction: row;*/
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
 
 }
