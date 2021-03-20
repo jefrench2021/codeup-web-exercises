@@ -4,7 +4,25 @@ line
 comment
 */
 
+div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+body {
+    background-color: #81bfbf;
+}
+
 .fancy-header {
-    color: purple; /* single line comment */
+    color: #2c2c5a; /* single line comment */
     text-decoration: underline;
+    text-align: center;
+    justify-content: center;
+}
+
+.at-veridian {
+    justify-content: center;
+
+
 }
