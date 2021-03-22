@@ -42,11 +42,11 @@ Doing z-index: 1001 is an an attempt to appear "on top" of a item with z-index: 
 */
 }
 
-/*.nav {*/
-/*    list-style-type: none;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    display: inline-block;*/
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 .nav-item {
