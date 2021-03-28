@@ -1,3 +1,56 @@
+/*A mobile first approach to writing CSS means writing your default styling for a mobile device, then using media queries to change the layout based on larger devices.*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+.alert-info a{
+    background-color: #BEFFFF;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    border: 2px solid lightgray;
+}
+
+h1 {
+    margin: .2em auto .5em auto;
+    font-size: 3em;
+}
+/* method of getting into details so they don't battle one another is to go containter to item:
+.nav-links to .nav-links li to .nav-links
+*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    background: lightgray;
+    display: flex;
+    height: 3.5em;
+    width: 100%;
+    margin-bottom: .7em;
+}
+
+.nav-links a {
+    margin: auto;
+}
+
+
 /*body {*/
 /*    font:13px/1.0 Arial, Helvetica, sans-serif;*/
 /*}*/

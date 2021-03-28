@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<!--    <meta charset="UTF-8">-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/media-queries.css">
     <title>Media Queries</title>
+
 </head>
 <body>
 <div class="alert-info hidden-on-desktop">
@@ -36,3 +39,37 @@
 </footer>
 </body>
 </html>
+
+<!--Breakpoints
+Breakpoints are what we refer to as major resolution changes, which you specify with media queries, usually based on popular device configurations. They are called breakpoints because traditionally major layout elements are broken and repositioned, though not always the case, and the name stuck.
+
+You can determine whatever breakpoint px size you want, but you can find plenty of resources online to find the most frequently used breakpoints.
+
+
+/* Small devices (phones and pocket devices, 576 and up) */
+@media screen and (min-width:576px) { /* ... */ }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width:768px) { /* ... */ }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width:992px) { /* ... */ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) { /* ... */ }-->
+
+<!--Pixel is not a pixel article:
+"However, there are two tricky bits: the device-width media query and the <meta name="viewport" width="device-width"> tag. Both work with device pixels, and not with CSS pixels, because they report on the context of the web page, and not on its inner CSS workings.
+
+div.sidebar {
+	width: 300px;
+}
+
+@media all and (max-device-width: 320px) {
+	// styles assigned when device width is smaller than 320px;
+	div.sidebar {
+		width: 100px;
+	}
+
+}
+Now the sidebar is 300 CSS pixels wide, except when the device width is 320 device pixels or less, in which case it becomes 100 CSS pixels wide."-->
