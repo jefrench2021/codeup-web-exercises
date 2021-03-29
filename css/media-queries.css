@@ -50,6 +50,30 @@ h1 {
     margin: auto;
 }
 
+/*the header-img is a class, that holds the image it's self. We sent the container, to width 100% and tell the child to 100% of what's allowed by the parent. The body is width 100% with a margin, header-img is 100% of that and img is 100% of that.   */
+
+.header-img  {
+    width: 100%;
+
+}
+
+img {
+    width: 100%;
+}
+
+.sub-section h2 {
+    font-size: 1.25em;
+}
+
+.sub-section {
+    font-style: italic;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+
 
 /*body {*/
 /*    font:13px/1.0 Arial, Helvetica, sans-serif;*/
