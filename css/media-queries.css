@@ -85,9 +85,6 @@ footer {
 }
 
 /*end line----------------for Mobile View*/
-
-
-
 /*start media query*/
 /*start Desktop View*/
 
@@ -95,9 +92,54 @@ footer {
     body {
         flex-direction: row;
         flex-wrap: wrap;
-    }}
+    }
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1 {
+        margin: .2em auto .5em auto;
+        font-size: 2.5em;
+    }
+    .nav-links {
+        flex-direction: row;
+    }
+    .nav-links li {
+        background: none;
+        margin: 0 .75em;
+    }
+    section p {
+        padding-right: 1em;
+    }
+    .main {
+        flex-basis: 60%;
+    }
+    .sub-section {
+        flex-basis: 40%;
+    }
 
 
+
+}
+
+
+
+/*<!--Breakpoints*/
+/*    Breakpoints are what we refer to as major resolution changes, which you specify with media queries, usually based on popular device configurations. They are called breakpoints because traditionally major layout elements are broken and repositioned, though not always the case, and the name stuck.*/
+
+/*You can determine whatever breakpoint px size you want, but you can find plenty of resources online to find the most frequently used breakpoints.*/
+
+
+/*!* Small devices (phones and pocket devices, 576 and up) *!*/
+/*@media screen and (min-width:576px) { !* ... *! }*/
+
+/*!* Medium devices (tablets, 768px and up) *!*/
+/*@media screen and (min-width:768px) { !* ... *! }*/
+
+/*!* Large devices (desktops, 992px and up) *!*/
+/*@media screen and (min-width:992px) { !* ... *! }*/
+
+/*!* Extra large devices (large desktops, 1200px and up) *!*/
+/*@media screen and (min-width:1200px) { !* ... *! }-->*/
 
 /*/* Small devices (phones and pocket devices, 576 and up) */
 /*@media screen and (min-width:576px) { !* ... *! }*/
