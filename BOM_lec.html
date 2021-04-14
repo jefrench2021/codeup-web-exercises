@@ -12,14 +12,12 @@
 <script>
     "use strict";
 
-
-
     var count = 0;
     var max = 10;
     var interval = 1000; //interval == five second (ms)
 
 
-    var intervalInstructions = (function(){
+    var intervalId = setInterval(function(){
         if(count >= max){
             console.log("All done");
             clearInterval(intervalId)
