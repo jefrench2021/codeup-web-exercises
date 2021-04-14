@@ -24,6 +24,7 @@ var divElements = document.getElementsByTagName("div");
 
 console.log(divElements);
 
+
 // TODO: Now that we have a variable with all of the elements, can you tell me how many divs are in the HTML using that variable and a little Javascript? Hint: the variable looks and behaves a lot like an array, doesn't it? That helped us in our for loop's condition!
 
 console.log(divElements.length);
@@ -42,6 +43,10 @@ function locateElements(element){
 }
 
 // ii. a step further: accessing / looking into what we've located deeper
+
+function locateElements(element){
+    return document.getElementsByTagName(element);
+}
 
 // innerHTML/innerText
 
