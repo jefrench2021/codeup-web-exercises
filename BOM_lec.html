@@ -39,13 +39,15 @@
     var delay = 5000;
 
     var timeoutId = setTimeout(function(){
-        alert("I'll get here in ten seconds");
+        location.reload();
+        // alert("I'll get here in ten seconds");
+        //window.location = "https:??www.google.com";
         // location.reload();
     }, delay)
-
-    // setTimeout(function(){
-    //     alert("Hey! I'm about to reload!")
-    // }, 2000)
+    //Location Object represents the URL of the object that it is linked to and send it to a different website
+    setTimeout(function(){
+        alert("Hey! I'm about to reload!")
+    }, 2000)
 </script>
 </body>
 </html>
