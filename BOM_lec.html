@@ -12,21 +12,22 @@
 <script>
     "use strict";
 
-    var count = 0;
-    var max = 10;
-    var interval = 1000; //interval == five second (ms)
-
-
-    var intervalId = setInterval(function(){
-        if(count >= max){
-            console.log("All done");
-            clearInterval(intervalId)
-        } else {
-            console.log("Repeating this line; we're on interval number: " + count);
-            count++;
-        }
-    } ,interval)
+    // var count = 0;
+    // var max = 10;
+    // var interval = 1000; //interval == five second (ms)
     //
+    // //Telling it what to do. Interval instructions. This is a global scope we can call it later.
+    // var intervalId = setInterval(function(){
+    //     if(count >= max){
+    //         console.log("All done");
+    //         clearInterval(intervalId)
+    //     } else {
+    //         console.log("Repeating this line; we're on interval number: " + count);
+    //         count++;
+    //     }
+    // //How often do you want me to do thing, the timing. it's referencing the var interval above.
+    // } ,interval)
+    // //
     // var intervalId = setInterval(intervalInstructions, interval)
     //     //return me an ID for this interval (2)
     //
@@ -35,12 +36,13 @@
     //
     // clearInterval(specificIntervalID) //stop THIS interval by ID
 
-    // var delay = 5000;
-    //
-    // var timeoutId = setTimeout(function(){
-    //     location.reload();
-    // }, delay)
-    //
+    var delay = 5000;
+
+    var timeoutId = setTimeout(function(){
+        alert("I'll get here in ten seconds");
+        // location.reload();
+    }, delay)
+
     // setTimeout(function(){
     //     alert("Hey! I'm about to reload!")
     // }, 2000)
