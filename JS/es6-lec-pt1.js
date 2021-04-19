@@ -60,7 +60,7 @@
 
 /*
 * let and const (block scope vs. function scope)
-*/
+
 
 {
     var a = 10;
@@ -73,7 +73,7 @@ const c = 30;
 
 // console.log(a); // 10
 // console.log(b); // Uncaught ReferenceError: b is not defined
-// console.log(c += 3); //Uncaught TypeError: Assignment to constant variable.
+console.log(c += 3); //Uncaught TypeError: Assignment to constant variable.
 
 
 
@@ -93,7 +93,7 @@ const c = 30;
 // }
 
 // console.log(x);
-
+/*
 
 
 
@@ -110,6 +110,7 @@ let greeting = "Hello my name is " + firstName + ' ' + lastName + '.';
 
 //TODO: Refactor code from above, using template strings.
 
+let newGreeting = `Hello my name is ${firstName}`${1+2}
 
 // console.log(newGreeting);
 
@@ -140,6 +141,19 @@ itemsHtml += "</ul>";
 
 
 //new way
+let itemsHtml =
+    <ul>
+        <l>${items[0]}</l>
+        <l></l>
+        <l></l>
+
+
+
+
+    </ul>
+
+
+
 
 
 // console.log(newItemsHtml);
