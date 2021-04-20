@@ -2,7 +2,7 @@
 //
 // console.log(topHeaderElement);
 
-//How else can we locate? We can check out CLASS and TAG as well
+//---------How else can we locate? We can check out CLASS and TAG as well-------------------
 
 // var currentOffers = document.getElementsByClassName("special-offer")
 //
