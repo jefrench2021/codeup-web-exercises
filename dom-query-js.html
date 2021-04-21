@@ -63,6 +63,59 @@
             }
         }
 
+        // TODO: changing odd color to grey
+        // for(var i = 0; i < evens.length; i++){
+        //     evens[i].style.color = 'grey';
+        // }
+
+        // TODO: Set text color of li with dbid = 1 to blue
+
+        for(var j = 0; j <listItems.length; j++){
+            if(listItems[j].getAttribute("data-dbid") == 1)
+                listItems[j].setAttribute("class",
+                    listItems[j].getAttribute("class") + (" blue") );
+
+        }
+
+// var dBidOne = document.getElementsByTagName("li")[0];
+//         dBidOne.style.color = "blue";
+
+        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        // console.log(subParagraphs);
+
+        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+
+        // for (i = -1; i <subParagraphs.length; i++){
+        //     if(subParagraphs[i] !== subParagraphs[0]){
+        //         false;
+        //     }
+        //     else{
+        //         subParagraphs[0].innerHTML = "Mission Accomplished!";
+        //     }
+        // }
+
+        // subParagraphs[0].innerText="Mission Accomplished!";
+        var lorem = document.getElementsByClassName("sub-paragraph")[0].innerText;
+        var newSub = "Mission Accomplished!";
+        // var newSub = subParagraphs[0].innerText="Mission Accomplished!"; // makes text show as mission statement everytime page is refreshred, read last in javascript
+
+        missionButton.addEventListener("click", function(){
+
+            if(subParagraphs[0].innerText == newSub){
+                return subParagraphs[0].innerText = lorem;
+            }else{
+                return subParagraphs[0].innerText = newSub;
+            }
+        });
+
+        // missionButton.addEventListener("click", function(){
+        //    var newSub = subParagraphs[0].innerText="Mission Accomplished!";
+        //    return newSub;
+        // }
+        // );
+
+
 
     })();
 </script>
